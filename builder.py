@@ -79,7 +79,7 @@ def validate(containerids):
             click.echo("\nContainer(%s) has Status: %s" % (x[index], str(container.status)))
             for line in container.logs(stream=True):
                 service_status_response = str(line.strip())
-                if(service_status_response.find("200")>0):
+                if(service_status_response.find("400")<0 and str(container.status)!='exited'):
                     click.echo("Web Service(%s) has Status: running" % x[index])
                     flag=0
                     break
