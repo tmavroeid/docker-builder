@@ -24,8 +24,14 @@ This project is about a python tool automating operations with docker containers
 
 ### Prerequisites
 
-Please make sure you've already ***Python3***. The tool is utilizing the ***Docker Remote API***, which is set up in tcp://0.0.0.0:2376. For the purpose of using the tool, you should set up the Remote API likewise. The following instructions apply to Ubuntu 16.04 and Debian 9.9 (stretch).
+Please make sure you've already ***Python3***. The tool is utilizing the ***Docker Remote API*** , the ***Python SDK for Docker*** and the python package ***Click***. The ***Remote API*** is set up in tcp://0.0.0.0:2376. For the purpose of using the tool, you should set up the Remote API likewise. The following instructions apply to Ubuntu 16.04 and Debian 9.9 (stretch).
 
+Install the Python SDK and Click:
+```
+apt-get install python3-pip
+pip3 install docker
+pip3 install click
+```
 Edit the file:
 ```
 sudo nano /lib/systemd/system/docker.service
@@ -79,7 +85,7 @@ virtualenv -p python3 venv/
 
 ```
 . venv/bin/activate
-pip install --editable .
+pip3 install --editable .
 ```
 
 5. Finally, execute the *build* command to build the image according the instructions that are defined in a Dockerfile:
@@ -121,4 +127,4 @@ Consolidate Logs of a Number of Containers Into a Local File by providing the fi
 ## Technologies
 * [Docker](https://www.docker.com/)
 * [Click](https://click.palletsprojects.com/en/7.x/)
-
+* [Python SDK for Docker](https://docker-py.readthedocs.io/en/stable/)

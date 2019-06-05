@@ -10,7 +10,7 @@ setup(
     author = "Theodoros Mavroeidakos",
     description = ("A tool automating operations with docker containers"),
     py_modules=["builder"],
-    python_requires='>=3.7',
+    python_requires='>=3.0',
     install_requires=['docker', 'Click', 'requests'],
     classifiers=[
         "Programming Language :: Python :: 3",
