@@ -9,7 +9,7 @@
 - [Usage](#usage)
 - [Testing](#testing)
 - [Examples of use](#examples-of-use)
-
+- [Technologies](#technologies)
 
 ## Introduction
 This repository contains a python tool automating operations with docker containers by utilizing the Docker Remote API. This python tool implements the following:
@@ -119,14 +119,6 @@ Consolidate Logs of a Number of Containers Into a Local File by providing the fi
   ![Consolidate Logs:](images/builder-logging.png)
 
 ## Technologies
+* [Docker](https://www.docker.com/)
+* [Click](https://click.palletsprojects.com/en/7.x/)
 
-certifi==2019.3.9
-chardet==3.0.4
-Click==7.0
-docker==4.0.1
-idna==2.8
-pkg-resources==0.0.0
-requests==2.22.0
-six==1.12.0
-urllib3==1.25.3
-websocket-client==0.56.0
