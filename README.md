@@ -86,7 +86,7 @@ pip install --editable .
 
 ```
 builder --help
-builder.py build -d ./ -t "alpine_hello_world:1"
+builder build -d ./ -t "alpine_hello_world:1"
 ```
 
 6. Exit virtual environment by invoking:
