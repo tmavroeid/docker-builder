@@ -79,12 +79,13 @@ def validate(containerids):
             click.echo("\nContainer(%s) has Status: %s" % (x[index], str(container.status)))
             for line in container.logs(stream=True):
                 service_status_response = str(line.strip())
-                if(service_status_response.find("400")<0 and str(container.status)!='exited'):
+                if(service_status_response.find("400")<0 and str(container.status)!='exited' and str(container.status)!='paused' and str(container.status)!='dead'):
                     click.echo("Web Service(%s) has Status: running" % x[index])
                     flag=0
                     break
-            if(flag):
-                click.echo("Web Service(%s) has Status: not running" % str(x))
+                else:
+                    click.echo("Web Service(%s) has Status: not running" % str(x))
+                    break
         except Exception as ex:
             template = "An exception of type {0} occured. Arguments:\n{1!r}"
             message = template.format(type(ex).__name__, ex.args)
