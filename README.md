@@ -12,7 +12,7 @@
 - [Technologies](#technologies)
 
 ## Introduction
-This project is about a python tool automating operations with docker containers by utilizing the Docker Remote API. This python tool implements the following:
+This python tool automates operations with docker containers by utilizing the Docker Remote API. This python tool implements the following:
 
 - Building a Docker Image from a given Dockerfile and an application (a ‘Hello world’ web application)
 - Starting a few instances of the Docker Image in different containers
