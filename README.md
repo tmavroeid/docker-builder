@@ -4,7 +4,7 @@
 
 ##### Table of Contents  
 - [Introduction](#introduction)
-- [Getting Started](#gettingstarted)  
+- [Getting Started](#getting-started)  
   - [Prerequisites](#prerequisites)  
 - [Usage](#usage)
 - [Testing](#testing)
