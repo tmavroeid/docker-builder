@@ -17,6 +17,7 @@ This project is about a python tool automating operations with docker containers
 - Building a Docker Image from a given Dockerfile and an application (a ‘Hello world’ web application)
 - Starting a few instances of the Docker Image in different containers
 - Validating that the container instances are running
+  - Validating the status of the service running inside the container (health check)
 - Monitoring the resource usage of each container (CPU, I/O, etc)
 - Consolidating the log output of all the container instances into one centralized log file.
 
